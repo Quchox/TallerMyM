@@ -1,0 +1,47 @@
+.nav-btn{
+    background-color: rgb(13, 117, 202);
+    border: 0;
+    border-radius: 0;
+    align-self: baseline;
+    text-align: center;
+    text-decoration: none;
+    flex: 1;
+    
+}
+
+.nav-btn:hover{
+    background-color: rgb(6, 101, 179);
+    text-decoration: none;
+
+}
+
+.nav-container{
+    background: #fff;
+    min-height: 85vh;
+    margin-bottom: 10px;
+}
+
+.ven-header{
+    height: 6vh;
+    min-height: 6vh;
+}
+
+.ven-col{
+    min-height: 90vh;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.scroll-container {
+    width: 100%;
+    height: 525px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px;
+  }

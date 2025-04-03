@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+//custom fonts - monserrat y roboto
+$font-family-primary: "Montserrat", sans-serif;
+$font-family-secondary: "Roboto", sans-serif;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b{
+  font-family: $font-family-primary;
+  font-weight: 700;
+}
+
+p,
+a,
+input,
+button,
+table,
+label{
+  font-family: $font-family-secondary;
+  font-weight: 400;
+}
+
+@import "../../node_modules/bootstrap/scss/bootstrap";

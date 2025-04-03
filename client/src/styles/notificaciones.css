@@ -1,0 +1,50 @@
+.floating-button {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    bottom: 40px;
+    right: 60px;
+    background-color: #005ba5;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 35px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.floating-button:hover {
+    text-decoration: none;
+    color: #005aa3;
+    background-color: #fff;
+
+}
+
+.my-float {
+    margin-top: 0px;
+}
+
+.btn-eliminar {
+    background-color: #fff;
+    padding: 5px;
+    font-size: 25px !important;
+}
+
+.btn-eliminar:hover {
+    text-decoration: none;
+    color: #F44237;
+    background-color: #fff;
+}
+
+.badge-wrapper {
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    z-index: 102;
+}

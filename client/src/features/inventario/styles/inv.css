@@ -1,0 +1,157 @@
+/* Inventario */
+.article-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 4 o 5 columnas por fila */
+  gap: 1rem;
+  padding: 0rem;
+}
+
+.article {
+  background-color: #fff;
+  text-align: start;
+  box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  width: 250px;
+  height: 285px;
+}
+
+.imgFrame {
+  width: 100%;
+  height: 135px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+  padding-top: 5px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.imgDetalle img {
+  object-fit: cover;
+  width: 80%;
+  height: 80%;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.article:hover {
+  transform: scale(1.05);
+}
+
+/*Para visualizar detalles de pieza o agregar pieza*/
+.grid-container-item {
+  display: grid;
+  gap: 20px;
+  grid-template:
+    "header"
+    "main"
+    "footer";
+
+  .header {
+    grid-area: header;
+  }
+
+  .main {
+    grid-area: main;
+    background-color: #f2f3f5;
+    margin-right: 20px;
+  }
+
+  .footer {
+    background-color: #d9e2e9;
+    grid-area: footer;
+    padding: 2%;
+  }
+
+  @media (min-width: 992px) {
+    grid-template:
+      "header header header" 55px
+      "navbar main main" auto
+      "footer footer footer" auto/
+      0px auto 200px;
+  }
+}
+
+/* IMG */
+.img-container {
+  width: 400px;
+  height: 350px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.imgDetalle {
+  object-fit: cover;
+  position: absolute;
+  width: 330px;
+  height: 330px;
+}
+
+.imgDetalle svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  justify-self: center;
+  align-self: center;
+}
+
+.delete-btn {
+  position: absolute;
+  display: flex;
+  cursor: pointer;
+  opacity: 0;
+  background-color: #D9534F !important;
+  color: #fff !important;
+  transition: opacity 0.3s ease;
+  top: 100px;
+  right: 45px;
+  width: 35px;
+  padding: 5px !important;
+}
+
+.upload-btn {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  display: flex;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.imgDetalle:hover .upload-btn {
+  opacity: 1;
+  border: 0;
+}
+
+.imgDetalle:hover .delete-btn {
+  opacity: 1;
+}
+
+.scrollable-container {
+  max-height: 75vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  margin-bottom: 20px;
+
+}
+
+.scrollable-container::-webkit-scrollbar {
+  display: none;
+}

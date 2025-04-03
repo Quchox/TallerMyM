@@ -1,0 +1,159 @@
+body {
+  background: #f2f3f5;
+  min-height: 100vh;
+}
+
+footer {
+  background-color: #d9e2e9;
+  text-align: center;
+  min-height: 550px;
+  position:relative;
+  background: linear-gradient(to right, #004680, #005ba5);
+  backdrop-filter: blur(10px); /* Efecto blur (vidrio esmerilado) */
+}
+
+footer.footer-white-text{
+
+ color: #fff 
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+
+}
+
+nav a:hover{
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  padding: 0;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+.container-login {
+  height: 550px;
+  width: 470px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container-register {
+  height: 600px;
+  width: 500px;
+}
+
+button:active {
+  animation: click 0.1s ease;
+}
+
+.btn {
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: 8px;
+  min-width: 80px;
+}
+
+@keyframes click {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.grid-container > * {
+  text-align: center;
+  padding: 0px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 20px;
+  grid-template:
+    "header"
+    "navbar"
+    "main"
+    "footer";
+
+  .header {
+    grid-area: header;
+  }
+
+  .sidebar {
+    grid-area: navbar;
+    background-color: #fff;
+    margin-left: 20px;
+    overflow: hidden;
+    align-items: center;
+    height: 80vh;
+  }
+
+  .main {
+    grid-area: main;
+    background-color: #f2f3f5;
+    margin-right: 20px;
+    min-height: 85vh;
+  }
+
+  .footer {
+    background-color: #d9e2e9;
+    grid-area: footer;
+  }
+
+  @media (min-width: 992px) {
+    grid-template:
+      "header header header" 55px
+      "navbar main main" auto
+      "footer footer footer" auto/
+      400px auto 200px;
+  }
+
+  span{
+    text-align: left;
+    justify-self: start;
+    align-self: start;
+  }
+
+}
+
+/*Scroll Bar*/
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-track {
+  
+  -webkit-box-shadow: inset 0 0 16px rgba(200,200,200,1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color:#fff;
+  -webkit-box-shadow: inset 0 0 70px #005aa3;
+}
+
+.btn-link{
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn-link:hover{
+  text-decoration: none;
+  color: inherit;
+}
